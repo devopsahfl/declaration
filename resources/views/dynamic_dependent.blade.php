@@ -1,21 +1,3 @@
-<?php
-
-
-error_reporting(0);
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname="wso2am_db";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-
-
- if ($conn->connect_error) {
-   die("Connection failed: " . $conn->connect_error);
-}
-?>
 <!DOCTYPE html>
 <head>
     <title>Declaration Form</title>
@@ -58,7 +40,6 @@ $conn = new mysqli($servername, $username, $password, $dbname);
   <form action="sendOtp" method="POST">
 <div class="container box p-4 ml-2 border border-sucess" style=" margin-top: 30px!important;">
 <textarea style="display:none;" id="master" name="master">{{$country_list}}</textarea>
-    <!-- {{$decoded}} -->
    <h3><b>DECLARATION FORM</b></h3><br />
    <div class="form-group">
     <select name="type" id="type" class="form-control input-lg dynamic" data-dependent="partner_code" onChange="getpartner_code()">
