@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <head>
     <title>Declaration Form</title>
@@ -32,7 +33,7 @@
   </style>
 </head>
 <body>
-<div class="logo" style="padding-top:15px;padding-left:70px;padding-bottom:5px;">
+<div class="logo" style="padding-top:5px;padding-left:70px;padding-bottom:3px;">
     <div class="form-inline">
     <a href="{{url('/')}}"><img  src="files/logo.png"></a>
     </div>
@@ -40,8 +41,10 @@
   <form action="sendOtp" method="POST">
 <div class="container box p-4 ml-2 border border-sucess" style=" margin-top: 30px!important;">
 <textarea style="display:none;" id="master" name="master">{{$country_list}}</textarea>
-   <h3><b>DECLARATION FORM</b></h3><br />
+   
+   <h3><b>Channel Partner Details</b></h3><br />
    <div class="form-group">
+     <label for="type">TYPE</label>
     <select name="type" id="type" class="form-control input-lg dynamic" data-dependent="partner_code" onChange="getpartner_code()">
      <option disabled="disabled" value="Selected">Select Type</option>
 
@@ -49,6 +52,7 @@
    </div>
    <br />
    <div class="form-group">
+     <label for="partner_code">PARTNER CODE</label>
     <select name="partner_code" id="partner_code" class="form-control input-lg dynamic" data-dependent="contact_number" onChange="getContact_number()">
     </select>
    </div>
@@ -56,6 +60,7 @@
    <!-- <div class="form-group">
     <select  type ="text" name="contact_number" id="contact_number" class="form-control input-lg"  aria-expanded="false" readonly></select>
    </div> -->
+   <label for="contact_number"> MOBILE NUMBER</label>
    <input  type ="text" name="contact_number" id="contact_number" class="form-control input-lg"></select><br>
    <div class="row">
    <button type="submit" id="sendotp" class="btn btn-primary">Send OTP</button>

@@ -7,23 +7,18 @@
     <title>Successfull</title>
 </head>
 <style>
-body{
-    background-image: url('files/dhachik.jpg');
-                background-repeat: no-repeat;
-                 background-attachment: fixed;
-                 background-size: cover;
+    img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 150px;
+}
 
-}
-mark{
-    background-color:Blue;
-    color:white;
-}
 </style>
 <body>
-    
+        <img src="files/checked.png" style="width:15%;"> 
     <center>
-        <h1 style=" margin-top: 70px; color:blue;"><mark>You Have Successfully Submitted! Thank You</mark></h1>
+        <h1 style=" margin-top: 70px; ">Thank You!<p>Your Submission Has Been Sent.</p></h1>
     </center>
-   
 </body>
 </html>

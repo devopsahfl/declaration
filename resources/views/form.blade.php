@@ -28,7 +28,7 @@
                 
 
             }
-            h1{
+            h3{
                 text-align:center;
                 color: Black;
             }
@@ -39,6 +39,7 @@
             .col{
                 position: relative;
                 left: 150px;
+                color:black;
             
             }
             .col-1{
@@ -52,8 +53,8 @@
             }
         
             .details{
-                margin-top:20px;
-            margin-left: 200px;
+                margin-top:40px;
+            margin-left: 100px;
             }
             body{
                 background-image: url('files/dhachik.jpg');
@@ -64,7 +65,7 @@
     </style>
 </head>
 <body>
-    <h1>AGREEMENT POLICIES</h1>
+    <h3><b>Code of Conduct for Aadhar Mitra (AM), Mahila Aadhar Mitra (MAM) and Direct Selling Agent (DSA)</b></h3>
 
 
      <div class="details">
@@ -83,7 +84,7 @@
             <!-- <div class="row"> -->
             <div class="col">
          
-                <p><input type="checkbox" id="checkbox" required name="terms"> I hereby<u> declare and confirm that I have read, understood and agree to abide by the DSA Code of Conduct, Anti-Corruption, Anti Money Laundering,<p> KYC and social media Policy of Aadhar Housing Finance Ltd. I further confirm that the same has been explained to my employees.<p></u></p>
+                <p><input type="checkbox" id="checkbox" required name="terms"><b>I hereby<u> declare and confirm that I have read, understood and agree to abide by the DSA Code of Conduct, Anti-Corruption, Anti Money Laundering,<p> KYC and social media Policy of Aadhar Housing Finance Ltd. I further confirm that the same has been explained to my employees.<p></u></p></b>
                         
             </div></br>
                 <div class="col-1">
@@ -91,5 +92,30 @@
                 </div></br></br>
         <!-- </div> -->
         </form>
+
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+         crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.js" 
+        integrity="sha512-ENqEDq2o2Ho8dh8tkYjoJ8m7Xvyz8f1H8OCD2ub4b3HfZAxD+TahCpJombeLtO6+E9nLRFmktCN2LcroxZj3hg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+        <!-- <script>
+        $('#submit').on('click', function(){
+            console.log("submit");
+            var data=$('#checkbox').val();
+
+            console.log(data);
+
+            if(data=='checkbox'){
+                Swal.fire({
+                title: 'Hello Its mina',
+                type: 'success',
+                showCloseButton: true
+                })
+
+            }
+
+        })
+    </script> -->
 </body>
 </html>
