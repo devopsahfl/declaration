@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('type');
             $table->string('partner_code');
             $table->string('contact_number');
-            $table->timestamps();
+             $table->timestamp('submitted_at');
         });
     }
 
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('amcp');
     }
 };

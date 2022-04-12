@@ -13,6 +13,7 @@ class Save extends Model
 
         'partner_code',
         'type',
-        'contact_number'
+        'contact_number',
+         'submitted_at'
         ];
 }
