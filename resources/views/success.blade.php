@@ -14,11 +14,15 @@ body{
                  background-size: cover;
 
 }
+mark{
+    background-color:Blue;
+    color:white;
+}
 </style>
 <body>
     
     <center>
-        <h1 style=" margin-top: 70px; color:blue;">You Have Successfully Submitted! Thank You</h1>
+        <h1 style=" margin-top: 70px; color:blue;"><mark>You Have Successfully Submitted! Thank You</mark></h1>
     </center>
    
 </body>

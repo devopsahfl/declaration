@@ -30,7 +30,7 @@
             }
             h1{
                 text-align:center;
-                color: blue;
+                color: Black;
             }
             .row{
                 padding-right: 400px;
@@ -91,30 +91,5 @@
                 </div></br></br>
         <!-- </div> -->
         </form>
-
-        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-         crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.js" 
-        integrity="sha512-ENqEDq2o2Ho8dh8tkYjoJ8m7Xvyz8f1H8OCD2ub4b3HfZAxD+TahCpJombeLtO6+E9nLRFmktCN2LcroxZj3hg==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-        <!-- <script>
-        $('#submit').on('click', function(){
-            console.log("submit");
-            var data=$('#checkbox').val();
-
-            console.log(data);
-
-            if(data=='checkbox'){
-                Swal.fire({
-                title: 'Hello Its mina',
-                type: 'success',
-                showCloseButton: true
-                })
-
-            }
-
-        })
-    </script> -->
 </body>
 </html>
