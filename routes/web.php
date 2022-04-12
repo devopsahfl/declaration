@@ -5,7 +5,7 @@ use App\Http\Controllers\DynamicDependent;
 use App\Http\Controllers\GetOtpController;
 use App\Http\Controllers\otpVerifyController;
 use App\Http\Controllers\Check;
-use App\Http\Controllers\insertdataController;
+use App\Http\Controllers\insertDataController;
 // use Illuminate\Support\Facades\Route;
 // use App\Models\Article;
 // use App\Http\Controllers\UserController;
