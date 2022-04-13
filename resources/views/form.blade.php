@@ -65,7 +65,7 @@
     </style>
 </head>
 <body>
-    <h3><b>Code of Conduct for Aadhar Mitra (AM), Mahila Aadhar Mitra (MAM) and Direct Selling Agent (DSA)</b></h3>
+    <h3><b><u>Code of Conduct for Aadhar Mitra (AM), Mahila Aadhar Mitra (MAM) and Direct Selling Agent (DSA)</u></b></h3>
 
 
      <div class="details">
