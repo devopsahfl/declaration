@@ -20,12 +20,10 @@
     }
       
     }
-
-
     .leftside{
       /* background: red; */
       
-      background:url("files/dhachik.jpg") no-repeat fixed center;
+      background-color:#00237d;
     }
     .rightside{
       /* background:blue; */
@@ -39,65 +37,56 @@
     <a href="{{url('/')}}"><img  src="files/logo.png"></a>
     </div>
 </div> -->
-<style>
-  
-@media screen and (max-width: 992px) {
-  .mainbar {
-   
-  }
-}
-  </style>
- <div class="container  p-4 ml-2  border-sucess" style=" margin-top: 10px; justify-content:center;">
-                  <textarea style="display:none;" id="master" name="master">{{$country_list}}</textarea>
+
 
   <form action="sendOtp" method="POST">
 <div class="row no-gutters">
   <div class="col-lg-6 col-md-12 no-gutters">
-    <div class="leftside">
-
+    <div class="leftside d-flex flex-row-fluid flex-column text-center p-10 pt-lg-20" style="padding-top:90px;">
+    <a href="{{url('/')}}" class="py-9"><img  src="files/logo.png" class="h-70px"></a> 
+    <h2 class="fw-bolder fs-2qx pb-5 pb-md-10" style="color: #ffffff;">Welcome to Channel Partner Panel</h2>
     </div>
   </div>
 
   <div class="col-lg-6 col-md-12 no-gutters">
     <div class="rightside d-flex justify-content-center align-items-center">
-      <div class="row-lg-12 row-md-12 row-md-12">
+   
+      <!-- <div class="container  p-4 ml-2  border-sucess" style=" margin-top: 10px; justify-content:center;"> -->
+                  <textarea style="display:none;" id="master" name="master">{{$country_list}}</textarea>
+                
+        <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="form-group">
+                    <h3 style="color:Red;"><b><u>Channel Partner Details</u></b></h3>
+                      <label for="type">TYPE</label>
+                      <select name="type" id="type" class="form-control form-control-lg form-control-solid" data-dependent="partner_code" onChange="getpartner_code()">
+                      <option disabled="disabled" value="Selected">Select Type</option>
 
-                    <div class="mainbar">
-                        <h3 style="margin-left:50px;" ><b>Channel Partner Details</b></h3><br />
-                    </div>
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="form-group">
-                          
-                          <label for="type">TYPE</label>
-                          <select name="type" id="type" class="form-control input-lg dynamic" data-dependent="partner_code" onChange="getpartner_code()">
-                          <option disabled="disabled" value="Selected">Select Type</option>
-
-                          </select>
-            </div>
-                    <br />
-            <div class="form-group">
-                      <label for="partner_code">PARTNER CODE</label>
-                      <select name="partner_code" id="partner_code" class="form-control input-lg dynamic" data-dependent="contact_number" onChange="getContact_number()">
                       </select>
-            </div>
-                    <br />
-                    <!-- <div class="form-group">
-                      <select  type ="text" name="contact_number" id="contact_number" class="form-control input-lg"  aria-expanded="false" readonly></select>
-                    </div> -->
-            <div class="form-group">
-                    <label for="contact_number"> MOBILE NUMBER</label>
-                    <input  type ="text" name="contact_number" id="contact_number" class="form-control input-lg"></select><br>
-                    
-                    <button type="submit" id="sendotp" class="btn btn-primary">Send OTP</button>
-            </div>
-                    {{ csrf_field() }}
-                    <br />
-                    <br />
-          
-          </div>
+        </div>
+                <br />
+        <div class="form-group">
+                  <label for="partner_code">PARTNER CODE</label>
+                  <select name="partner_code" id="partner_code" class="form-control form-control-lg form-control-solid" data-dependent="contact_number" onChange="getContact_number()">
+                  </select>
+        </div>
+                <br />
+                <!-- <div class="form-group">
+                  <select  type ="text" name="contact_number" id="contact_number" class="form-control input-lg"  aria-expanded="false" readonly></select>
+                </div> -->
+        <div class="form-group">
+                <label for="contact_number"> MOBILE NUMBER</label>
+                <input  type ="text" name="contact_number" id="contact_number" class="form-control input-lg"></select><br>
+                
+                <button type="submit" id="sendotp" class="btn btn-primary">Send OTP</button>
+        </div>
+                {{ csrf_field() }}
+                <br />
+                <br />
+      
+      </div>
 
-      </div>         
-    </div>
+                
+    <!-- </div> -->
   </div>
 
 </div>
