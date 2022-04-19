@@ -28,14 +28,14 @@ class insertDataController extends Controller
 
         
         $data=array(
-            'partner_code'=>$partner_code,
-            'type'=>$type,
-            'contact_number'=>$mobileNumber
+            'partner_code'=>trim($partner_code),
+            'type'=>trim($type),
+            'contact_number'=>trim($mobileNumber)
         );
     
        
-        // return $data;
-        $response=DB::table('amcp')->insert($data);
+        //return $data;
+         $response=DB::table('amcp')->insert($data);
          return view('success');
       //  return $number;
        
