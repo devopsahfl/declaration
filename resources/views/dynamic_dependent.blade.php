@@ -57,7 +57,7 @@
 
           <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="form-group">
-            <h4 style="color:Red;"><b><u class="form-heading">ENTER YOUR MOBILE NUMBER</u></b></h4><br><br>
+            <H4 style="color:Red;"><b><u class="form-heading">ENTER YOUR REGISTERED MOBILE NUMBER</u></b></H4><br><br>
               <label class="form-label" for="contact_number"> MOBILE NUMBER</label>
               <input type="text" name="contact_number" id="contact_number" class="form-control form-control-lg form-control-solid"></select><br>
 
