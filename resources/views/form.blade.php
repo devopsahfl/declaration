@@ -62,7 +62,7 @@
         }
 
         body {
-            background-image: url('files/dhachik.jpg');
+            background-image: url('files/tp.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -79,17 +79,18 @@
     <h3><b><u>Code of Conduct for Aadhar Mitra (AM), Mahila Aadhar Mitra (MAM) and Direct Selling Agent (DSA)</u></b></h3>
 
 
-    <div class="details">
-        <h4><b>TYPE:-</b> {{$type}}</h4>
-        <h4><b>PARTNER CODE:-</b> {{$partner_code}}</h4>
-        <h4><b>MOBILE NUMBER:-</b> {{$mobileNumber}}</h4>
-    </div>
+  
 
 
 
     <form action="save" method="POST">
         @csrf
         <div class="container">
+        <div class="details">
+        <h4><b>TYPE:-</b> {{$type}}</h4>
+        <h4><b>PARTNER CODE:-</b> {{$partner_code}}</h4>
+        <h4><b>MOBILE NUMBER:-</b> {{$mobileNumber}}</h4>
+    </div>
             <embed src="files/codeOfConduct.pdf" type="application/pdf" width="100%" height="600px">
         </div>
         <!-- <div class="row"> -->

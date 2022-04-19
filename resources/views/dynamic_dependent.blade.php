@@ -4,9 +4,13 @@
   <title>Declaration Form</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+ 
   <style type="text/css">
     .leftside,
     .rightside {
@@ -27,7 +31,6 @@
 
     .rightside {
       background: white;
-      /* background:url("files/white.png") no-repeat fixed center; */
     }
 
     @media screen and (max-width:1000px) {
@@ -40,13 +43,6 @@
 </head>
 
 <body>
-  <!-- <div class="logo" style="padding-top:5px;padding-left:70px;padding-bottom:3px;">
-    <div class="form-inline">
-    <a href="{{url('/')}}"><img  src="files/logo.png"></a>
-    </div>
-</div> -->
-
-
   <form action="sendOtp" method="POST">
     <div class="no-gutters form-wrap">
       <div class="col-lg-6 col-md-12 no-gutters">
@@ -59,29 +55,9 @@
       <div class="col-lg-6 col-md-12 no-gutters">
         <div class="rightside d-flex justify-content-center align-items-center">
 
-          <!-- <div class="container  p-4 ml-2  border-sucess" style=" margin-top: 10px; justify-content:center;"> -->
-          <textarea style="display:none;" id="master" name="master">{{$country_list}}</textarea>
-
           <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="form-group">
-              <h3 style="color:Red;"><b><u class="form-heading">Channel Partner Details</u></b></h3>
-              <label class="form-label" for="type">TYPE</label>
-              <select name="type" id="type" class="form-control form-control-lg form-control-solid" data-dependent="partner_code" onChange="getpartner_code()">
-                <option disabled="disabled" value="Selected">Select Type</option>
-
-              </select>
-            </div>
-            <br />
-            <div class="form-group">
-              <label class="form-label" for="partner_code">PARTNER CODE</label>
-              <select name="partner_code" id="partner_code" class="form-control form-control-lg form-control-solid" data-dependent="contact_number" onChange="getContact_number()">
-              </select>
-            </div>
-            <br />
-            <!-- <div class="form-group">
-                  <select  type ="text" name="contact_number" id="contact_number" class="form-control input-lg"  aria-expanded="false" readonly></select>
-                </div> -->
-            <div class="form-group">
+            <h4 style="color:Red;"><b><u class="form-heading">ENTER YOUR MOBILE NUMBER</u></b></h4><br><br>
               <label class="form-label" for="contact_number"> MOBILE NUMBER</label>
               <input type="text" name="contact_number" id="contact_number" class="form-control form-control-lg form-control-solid"></select><br>
 
@@ -97,10 +73,10 @@
           <!-- </div> -->
         </div>
 
-      </div>
+    </div>
   </form>
 
-
+@include('sweetalert::alert')
 
 </body>
 
@@ -109,11 +85,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script>
-  // var master =document.getElementById("master").value;
-
-  // console.log("master",master);
-
-  //  dataObj = JSON.parse(master);
 
   window.onload = function() {
     var master = document.getElementById("master").value;

@@ -1,27 +1,20 @@
-@if(Session::has('warning'))
-<script>
-  swal("Invalid OTP!", "Ensure that you have entered correct OTP!", "warning")
-  });
-</script>
-@endif
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudfare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstarp.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous"></script>
-<script>
-  swal("Invalid OTP!", "Ensure that you have entered correct OTP!", "warning");
-</script>
-
-<!-- <script>
-swal("Successfully Sent!", "OTP sent on your registered mobile number", "success");
-
-</script> -->
-
+</head>
+<body>
+  
 <style>
   .center {
     position: absolute;
@@ -34,7 +27,7 @@ swal("Successfully Sent!", "OTP sent on your registered mobile number", "success
   }
 
   body {
-    background-image: url('files/dhachik.jpg');
+    background-image: url('files/tp.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -53,7 +46,11 @@ swal("Successfully Sent!", "OTP sent on your registered mobile number", "success
       justify-content: center;
     }
   }
-</style>
+  .row{
+    color:red;
+  }
+</style>  
+
 <div class="center justify-content-center text-align-center">
 
   <form action="verifyOtp" method="POST">
@@ -83,6 +80,8 @@ swal("Successfully Sent!", "OTP sent on your registered mobile number", "success
 
   </form>
 
+
 </div>
-<script>
-</script>
+@include('sweetalert::alert')
+</body>
+</html>
