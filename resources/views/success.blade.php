@@ -17,7 +17,7 @@ img{
 <body>
         <img src="files/checked.png" style="width:15%;"> 
     <center>
-        <h1 style="margin-top:70px;">Thank You!<p>Your Submission Has Been Sent.</p></h1>
+        <h1 style="margin-top:70px;">Thank You!<p>Your submission has been sent.</p></h1>
     </center>
 </body>
 </html>

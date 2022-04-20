@@ -19,18 +19,21 @@ class insertDataController extends Controller
          $number = $request->session()->pull('mobileNumberarray');
          $types = $request->session()->pull('typearray');
         $partner = $request->session()->pull('partnerarray');
+        $partner_name = $request->session()->pull('tosubmit');
+      
 
       
       $mobileNumber = $number[0];
       $type = $types[1];
       $partner_code = $partner[1];
-      
+      $partner_name = $partner_name[0];
 
         
         $data=array(
             'partner_code'=>trim($partner_code),
             'type'=>trim($type),
-            'contact_number'=>trim($mobileNumber)
+            'contact_number'=>trim($mobileNumber),
+            'partner_name'=>trim($partner_name)
         );
     
        
@@ -40,14 +43,5 @@ class insertDataController extends Controller
       //  return $number;
        
     }
-
-    //  /**
-    //     *
-    //     *@return \Illuminate\Http\Response
-    //     */
-
-    // public function successfull(){
-    //     return view('success');
-    // }
         
 }

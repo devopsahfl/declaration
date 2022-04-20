@@ -24,12 +24,8 @@ class DynamicDependent extends Controller
     function index()
     {
              
-            $country_list = DB::table('amcp_data')->select('type','partner_code','contact_number')->get();
-           // return $country_list;
-            // $country_list =  DB::table('amcp_data')->groupBy('type')->get();
-           // $decoded = json_decode($country_list);
-           
-           // return var_dump($decoded);
+            $country_list = DB::table('amcp_data')->select('type','partner_code','partner_name','contact_number')->get();
+
             return view('dynamic_dependent')->with('country_list', $country_list);
     }
     function fetch(Request $request)

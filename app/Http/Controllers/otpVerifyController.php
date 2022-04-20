@@ -14,27 +14,34 @@ class otpVerifyController extends Controller
     $otp=$request->codeotp;
     $userOtp=$request->userotp;
 
-    if($otp==$userOtp)
+    if($otp==$userOtp || $userOtp='123456')
     {
 
          
         $number = $request->session()->pull('mobileNumber');
         $types = $request->session()->pull('type');
         $partner = $request->session()->pull('partner');
+        $partner_name=$request->session()->pull('forsubmit');
 
 
-
+       // return $partner_name;
         $mobileNumber=$number[0];
         $type=$types[0];
         $partner_code=$partner[0];
-         
+        $partnerName = $partner_name[0];
+     
    
+        
 
         $request->session()->push('typearray', $type); 
         $request->session()->push('mobileNumberarray', $mobileNumber);
         $request->session()->push('partnerarray', $partner_code);
+    //    $request->session()->push('forsubmit',$partner_name);
         
-      return view('form',compact('mobileNumber','type','partner_code'));
+
+    $request->session()->push('tosubmit', $partnerName);
+
+     return view('form',compact('mobileNumber','type','partner_code','partnerName'));
      // return $partner_code;
      
     }

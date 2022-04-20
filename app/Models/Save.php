@@ -12,6 +12,7 @@ class Save extends Model
     protected $fillable =[
 
         'partner_code',
+        'partner_name',
         'type',
         'contact_number',
          'submitted_at'

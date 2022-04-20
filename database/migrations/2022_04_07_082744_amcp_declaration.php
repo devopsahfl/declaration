@@ -17,8 +17,9 @@ return new class extends Migration
             $table->id();
             $table->string('type');
             $table->string('partner_code');
+            $table->string('partner_name');
             $table->string('contact_number');
-            $table->timestamp('submitted_at');
+             $table->timestamp('submitted_at');
         });
     }
 
