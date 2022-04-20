@@ -111,7 +111,7 @@ class GetOtpController extends Controller
             "password": "aeGQ-52-",
             "peId": "1001900184535850000",
             "tmplId": "1007276557498698249",
-            "to": "8369280154",
+            "to": "'.$mobileNumber.'",
             "from": "AHFLCO",
             "charset": "UTF-16",
             "text": "Use OTP '.$otp.' for authenticating your contact no. with Aadhar Housing Finance. Valid for 30 Mins only."
