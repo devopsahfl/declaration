@@ -14,8 +14,7 @@ class insertDataController extends Controller
         *@return \Illuminate\Http\Response
         */
      public function save(Request $request)
-    {
-        
+    {  
          $number = $request->session()->pull('mobileNumberarray');
          $types = $request->session()->pull('typearray');
         $partner = $request->session()->pull('partnerarray');
@@ -23,12 +22,17 @@ class insertDataController extends Controller
       
 
       
+
       $mobileNumber = $number[0];
-      $type = $types[1];
-      $partner_code = $partner[1];
+      $type = $types[0];
+      $partner_code = $partner[0];
       $partner_name = $partner_name[0];
 
         
+        //\\return [$mobileNumber,$type,$partner_code,$partner_name];
+      //----\\
+     //      \\
+    //        \\
         $data=array(
             'partner_code'=>trim($partner_code),
             'type'=>trim($type),
